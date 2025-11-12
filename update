@@ -1,4 +1,142 @@
-2025-11-12 07:49:05,472 INFO:threading.py:975:(TempManager)Fan speed is OFF                                                                                               │
+2025-11-12 07:33:56,601 INFO waiting for sage_drv, sage_man, sage_dpm, sage_api to die                                                                                    │
+│2025-11-12 07:33:56,645 WARN received SIGTERM indicating exit request                                                                                                     │
+│2025-11-12 07:33:56,645 WARN exited: sage_drv (terminated by SIGTERM; not expected)                                                                                       │
+│2025-11-12 07:33:56,648 WARN exited: sage_man (terminated by SIGTERM; not expected)                                                                                       │
+│2025-11-12 07:33:56,863 INFO exited: sage_dpm (exit status 0; expected)                                                                                                   │
+│2025-11-12 07:33:57,646 INFO stopped: sage_api (exit status 0)                                                                                                            │
+│2025-11-12 07:35:52,809 INFO Set uid to user 0 succeeded                                                                                                                  │
+│2025-11-12 07:35:52,812 INFO RPC interface 'supervisor' initialized                                                                                                       │
+│2025-11-12 07:35:52,812 CRIT Server 'unix_http_server' running without any HTTP authentication checking                                                                   │
+│2025-11-12 07:35:52,812 INFO supervisord started with pid 4542                                                                                                            │
+│2025-11-12 07:35:53,815 INFO spawned: 'sage_drv' with pid 4558                                                                                                            │
+│2025-11-12 07:35:53,818 INFO spawned: 'sage_man' with pid 4559                                                                                                            │
+└2025-11-12 07:35:53,821 INFO spawned: 'sage_dpm' with pid 4560                                                                                                            │
+─2025-11-12 07:35:53,824 INFO:sage_driver.cc:223:(RunDriver)Beginning Driver process                                                                                       │
+─2025-11-12 07:35:53,824 INFO spawned: 'sage_api' with pid 4561                                                                                                            │
+┌2025-11-12 07:35:54,316 INFO:man:30:(MainThread)Beginning system manager process                                                                                          │
+│2025-11-12 07:35:54,316 INFO:man:31:(MainThread)Start system manager                                                                                                      │
+│2025-11-12 07:35:54,316 INFO:man:31:(MainThread)current system status: version: 4.8.2_dev commit id: 2d7a0ca3                                                             │
+└[50%] app zip file extracted                                                                                                                                              │
+─2025-11-12 07:35:54,339 INFO:spi_wrapper.cc:64:(InitializeSpi)Sage driver began with IRQ not asserted                                                                     │
+┌2025-11-12 07:35:54,657 ERROR:man:31:(MainThread)The app RawData+1_0+030 with version_id 03010 already exists on the system. Delete it first or change the version_id of y│
+│2025-11-12 07:35:54,667 DEBUG:man:31:(MainThread)Creating Messenger on socket 5559 with mode 1                                                                            │
+│2025-11-12 07:35:54,668 DEBUG:man:31:(MainThread)Creating Messenger on socket 5561 with mode 1                                                                            │
+│2025-11-12 07:35:54,668 DEBUG:man:31:(MainThread)Creating Messenger on socket 5564 with mode 1                                                                            │
+│2025-11-12 07:35:54,668 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5560 with mode 0                                                                  │
+│2025-11-12 07:35:54,668 DEBUG:man:31:(MainThread)Creating Messenger on socket 5566 with mode 1                                                                            │
+│2025-11-12 07:35:54,668 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5558 with mode 0                                                                  │
+│2025-11-12 07:35:54,668 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5565 with mode 0                                                                  │
+│2025-11-12 07:35:54,669 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5567 with mode 0                                                                  │
+│Unknown argument "set"                                                                                                                                                    │
+└2025-11-12 07:35:54,683 INFO:threading.py:975:(TempManager)Temp Manager Thread Started                                                                                    │
+┌2025-11-12 07:35:55,447 INFO:default_dpm.py:277:(MainThread)Starting Data Processing Module                                                                               │
+│2025-11-12 07:35:55,462 INFO:default_dpm.py:209:(MainThread)Start new app process                                                                                         │
+│2025-11-12 07:35:55,480 INFO:default_dpm.py:203:(MainThread)App 0301_0 enters to new state LOADING                                                                        │
+└2025-11-12 07:35:55,482 INFO:default_dpm.py:192:(MainThread)App 0301_0 is importing from RawData+1_0+030                                                                  │
+─2025-11-12 07:35:55,681 INFO:man:31:(MainThread)Creating new BT worker                                                                                                    │
+─2025-11-12 07:35:55,689 INFO:default_dpm.py:203:(MainThread)App 0301_0 enters to new state CONFIGURE                                                                      │
+┌2025-11-12 07:35:55,714 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)starting bt_thread                                                                                │
+│2025-11-12 07:35:55,715 INFO:man:31:(MainThread)Creating new command worker                                                                                               │
+│2025-11-12 07:35:55,715 INFO:man:31:(MainThread)Waiting on request from DPM to pair with dots                                                                             │
+│2025-11-12 07:35:56,683 INFO:threading.py:975:(HwButtonMonitor)Dip switch 1 state has changed to 0                                                                        │
+│2025-11-12 07:35:56,684 INFO:threading.py:975:(HwButtonMonitor)Dip switch 2 state has changed to 0                                                                        │
+│2025-11-12 07:35:56,684 INFO:threading.py:975:(HwButtonMonitor)running command sage wlan serve     
+Error: Device 'wlan0' (/org/freedesktop/NetworkManager/Devices/3) disconnecting failed: This device is not active                                                         │
+│Error: not all devices disconnected.                                                                                                                                      │
+│Connection 'SageAP' (55e9c5c0-073e-43cd-aa79-ab782650b419) successfully deleted.                                                                                          │
+│Connection 'SageAP' (304f5dc3-0c65-4655-b48e-99d99026dac9) successfully added.                                                                                            │
+└Error: Connection activation failed: No suitable device found for this connection (device eth0 not available because profile is not compatible with device (mismatching in│
+┌2025-11-12 07:35:56,817 INFO success: sage_drv entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+│2025-11-12 07:35:56,817 INFO success: sage_man entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+│2025-11-12 07:35:56,838 INFO success: sage_dpm entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+└2025-11-12 07:35:56,838 INFO success: sage_api entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+┌2025-11-12 07:35:56,857 INFO:threading.py:975:(HwButtonMonitor)Dip switch 3 state has changed to 0                                                                        │
+└2025-11-12 07:35:56,858 INFO:threading.py:975:(HwButtonMonitor)Dip switch 4 state has changed to 0                                                                        │
+─2025-11-12 07:35:57,716 INFO:driver_connections.cc:326:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchWT41U                                                           │
+─2025-11-12 07:36:03,329 WARNING:events.py:80:(sage_man|bt_ctrl_thread)BT module 0 is not responding after reset                                                           │
+─2025-11-12 07:36:06,338 INFO:driver_connections.cc:318:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchBT122                                                           │
+┌2025-11-12 07:36:06,406 DEBUG:threading.py:1038:(Thread-3)uart 0 < dumo_evt_dfu_boot(version=1)                                                                           │
+│2025-11-12 07:36:10,343 DEBUG:events.py:80:(sage_man|bt_ctrl_thread)uart 0 > dumo_cmd_system_hello()                                                                      │
+│2025-11-12 07:36:10,744 WARNING:events.py:80:(sage_man|bt_ctrl_thread)                                                                                                    │
+└2025-11-12 07:36:10,810 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)no available bluetooth board is detected. use bt122 by default.                                   │
+┌2025-11-12 07:36:10,811 INFO:driver_connections.cc:318:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchBT122                                                           │
+└2025-11-12 07:36:10,812 INFO:driver_connections.cc:318:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchBT122                                                           │
+─2025-11-12 07:36:10,812 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)start to reset bt module                                                                          │
+┌2025-11-12 07:36:10,813 INFO:driver_connections.cc:318:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchBT122                                                           │
+└2025-11-12 07:36:10,815 INFO:driver_connections.cc:318:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchBT122                                                           │
+┌2025-11-12 07:36:10,880 DEBUG:threading.py:1038:(Thread-4)uart 0 < dumo_evt_dfu_boot(version=1)                                                                           │
+│2025-11-12 07:36:10,890 DEBUG:threading.py:1038:(Thread-5)uart 1 < dumo_evt_system_boot(major=1, minor=0, patch=0, build=11, bootloader=1, hw=0)                          │
+│2025-11-12 07:36:10,890 DEBUG:threading.py:1038:(Thread-5)uart 1 < dumo_evt_endpoint_status(endpoint=0, type=1, destination_endpoint=-1, flags=11)                        │
+│2025-11-12 07:36:10,891 DEBUG:threading.py:1038:(Thread-5)uart 1 < dumo_evt_endpoint_status(endpoint=1, type=2, destination_endpoint=-1, flags=11)                        │
+│2025-11-12 07:36:10,893 DEBUG:threading.py:1038:(Thread-5)uart 1 < dumo_evt_endpoint_status(endpoint=31, type=16, destination_endpoint=-1, flags=7)                       │
+│2025-11-12 07:36:10,893 DEBUG:threading.py:1038:(Thread-6)uart 2 < dumo_evt_system_boot(major=1, minor=0, patch=0, build=11, bootloader=1, hw=0)                          │
+│2025-11-12 07:36:10,894 DEBUG:threading.py:1038:(Thread-6)uart 2 < dumo_evt_endpoint_status(endpoint=0, type=1, destination_endpoint=-1, flags=11)                        │
+│2025-11-12 07:36:10,895 DEBUG:threading.py:1038:(Thread-6)uart 2 < dumo_evt_endpoint_status(endpoint=1, type=2, destination_endpoint=-1, flags=11)                        │
+│2025-11-12 07:36:10,895 DEBUG:threading.py:1038:(Thread-6)uart 2 < dumo_evt_endpoint_status(endpoint=31, type=16, destination_endpoint=-1, flags=7)                       │
+│2025-11-12 07:36:10,896 DEBUG:threading.py:1038:(Thread-7)uart 3 < dumo_evt_system_boot(major=1, minor=0, patch=0, build=11, bootloader=1, hw=0)                          │
+│2025-11-12 07:36:10,897 DEBUG:threading.py:1038:(Thread-7)uart 3 < dumo_evt_endpoint_status(endpoint=0, type=1, destination_endpoint=-1, flags=11)                        │
+│2025-11-12 07:36:10,899 DEBUG:threading.py:1038:(Thread-7)uart 3 < dumo_evt_endpoint_status(endpoint=1, type=2, destination_endpoint=-1, flags=11)                        │
+│2025-11-12 07:36:10,899 DEBUG:threading.py:1038:(Thread-7)uart 3 < dumo_evt_endpoint_status(endpoint=31, type=16, destination_endpoint=-1, flags=7)                       │
+│2025-11-12 07:36:11,787 DEBUG:threading.py:1038:(Thread-6)uart 2 < dumo_evt_system_initialized(address='c4:d3:6a:b1:81:7a')                                               │
+│2025-11-12 07:36:11,789 DEBUG:threading.py:1038:(Thread-5)uart 1 < dumo_evt_system_initialized(address='c4:d3:6a:b1:98:92')                                               │
+│2025-11-12 07:36:11,795 DEBUG:threading.py:1038:(Thread-7)uart 3 < dumo_evt_system_initialized(address='c4:d3:6a:b1:81:1a')                                               │
+│2025-11-12 07:36:14,817 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)bt_thread is waiting for new event                                                                │
+└2025-11-12 07:36:24,684 INFO:threading.py:975:(TempManager)Fan speed is OFF                                                                                               │
+┌2025-11-12 07:48:56,736 WARN received SIGTERM indicating exit request                                                                                                     │
+│2025-11-12 07:48:56,737 INFO waiting for sage_drv, sage_man, sage_dpm, sage_api to die                                                                                    │
+│2025-11-12 07:48:56,790 WARN exited: sage_drv (terminated by SIGTERM; not expected)                                                                                       │
+│2025-11-12 07:48:56,790 WARN received SIGTERM indicating exit request                                                                                                     │
+│2025-11-12 07:48:56,792 WARN exited: sage_dpm (terminated by SIGTERM; not expected)                                                                                       │
+│2025-11-12 07:48:56,793 WARN exited: sage_man (terminated by SIGTERM; not expected)    
+2025-11-12 07:48:58,792 INFO stopped: sage_api (exit status 0)                                                                                                            │
+│2025-11-12 07:48:58,962 INFO Set uid to user 0 succeeded                                                                                                                  │
+│2025-11-12 07:48:58,966 INFO RPC interface 'supervisor' initialized                                                                                                       │
+│2025-11-12 07:48:58,966 CRIT Server 'unix_http_server' running without any HTTP authentication checking                                                                   │
+│2025-11-12 07:48:58,966 INFO supervisord started with pid 5654                                                                                                            │
+│2025-11-12 07:48:59,968 INFO spawned: 'sage_drv' with pid 5669                                                                                                            │
+│2025-11-12 07:48:59,971 INFO spawned: 'sage_man' with pid 5670                                                                                                            │
+│2025-11-12 07:48:59,973 INFO spawned: 'sage_dpm' with pid 5671                                                                                                            │
+└2025-11-12 07:48:59,976 INFO spawned: 'sage_api' with pid 5672                                                                                                            │
+─2025-11-12 07:48:59,977 INFO:sage_driver.cc:223:(RunDriver)Beginning Driver process                                                                                       │
+┌2025-11-12 07:49:00,439 INFO:man:30:(MainThread)Beginning system manager process                                                                                          │
+│2025-11-12 07:49:00,439 INFO:man:31:(MainThread)Start system manager                                                                                                      │
+│2025-11-12 07:49:00,439 INFO:man:31:(MainThread)current system status: version: 4.8.2_dev commit id: 2d7a0ca3                                                             │
+│2025-11-12 07:49:00,452 DEBUG:man:31:(MainThread)Creating Messenger on socket 5559 with mode 1                                                                            │
+│2025-11-12 07:49:00,452 DEBUG:man:31:(MainThread)Creating Messenger on socket 5561 with mode 1                                                                            │
+│2025-11-12 07:49:00,453 DEBUG:man:31:(MainThread)Creating Messenger on socket 5564 with mode 1                                                                            │
+│2025-11-12 07:49:00,453 DEBUG:man:31:(MainThread)Creating Messenger on socket 5566 with mode 1                                                                            │
+│2025-11-12 07:49:00,454 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5560 with mode 0                                                                  │
+│2025-11-12 07:49:00,454 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5567 with mode 0                                                                  │
+│2025-11-12 07:49:00,454 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5558 with mode 0                                                                  │
+│2025-11-12 07:49:00,455 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5565 with mode 0                                                                  │
+│Unknown argument "set"                                                                                                                                                    │
+└2025-11-12 07:49:00,472 INFO:threading.py:975:(TempManager)Temp Manager Thread Started                                                                                    │
+─2025-11-12 07:49:00,491 INFO:spi_wrapper.cc:64:(InitializeSpi)Sage driver began with IRQ not asserted                                                                     │
+┌2025-11-12 07:49:00,542 INFO:default_dpm.py:277:(MainThread)Starting Data Processing Module                                                                               │
+│2025-11-12 07:49:00,559 INFO:default_dpm.py:209:(MainThread)Start new app process                                                                                         │
+│2025-11-12 07:49:00,576 INFO:default_dpm.py:203:(MainThread)App 0301_0 enters to new state LOADING                                                                        │
+│2025-11-12 07:49:00,579 INFO:default_dpm.py:192:(MainThread)App 0301_0 is importing from RawData+1_0+030                                                                  │
+└2025-11-12 07:49:00,787 INFO:default_dpm.py:203:(MainThread)App 0301_0 enters to new state CONFIGURE                                                                      │
+┌2025-11-12 07:49:01,469 INFO:man:31:(MainThread)Creating new BT worker                                                                                                    │
+│2025-11-12 07:49:01,502 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)starting bt_thread                                                                                │
+│2025-11-12 07:49:01,502 INFO:man:31:(MainThread)Creating new command worker                                                                                               │
+│2025-11-12 07:49:01,503 INFO:man:31:(MainThread)Waiting on request from DPM to pair with dots                                                                             │
+│2025-11-12 07:49:02,471 INFO:threading.py:975:(HwButtonMonitor)Dip switch 1 state has changed to 0                                                                        │
+│2025-11-12 07:49:02,474 INFO:threading.py:975:(HwButtonMonitor)Dip switch 2 state has changed to 0                                                                        │
+│2025-11-12 07:49:02,474 INFO:threading.py:975:(HwButtonMonitor)running command sage wlan serve                                                                            │
+│Error: Device 'wlan0' (/org/freedesktop/NetworkManager/Devices/3) disconnecting failed: This device is not active                                                         │
+│Error: not all devices disconnected.                                                                                                                                      │
+│Connection 'SageAP' (304f5dc3-0c65-4655-b48e-99d99026dac9) successfully deleted.                                                                                          │
+│Connection 'SageAP' (0df0fd66-da83-4117-9b5b-a5d74ea2846e) successfully added.                                                                                            │
+│Error: Connection activation failed: No suitable device found for this connection (device eth0 not available because profile is not compatible with device (mismatching in│
+│2025-11-12 07:49:02,661 INFO:threading.py:975:(HwButtonMonitor)Dip switch 3 state has changed to 0                                                                        │
+└2025-11-12 07:49:02,662 INFO:threading.py:975:(HwButtonMonitor)Dip switch 4 state has changed to 0 
+2025-11-12 07:49:03,504 INFO:driver_connections.cc:326:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchWT41U                                                           │
+┌2025-11-12 07:49:03,504 INFO success: sage_drv entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+│2025-11-12 07:49:03,504 INFO success: sage_man entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+│2025-11-12 07:49:03,504 INFO success: sage_dpm entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+└2025-11-12 07:49:03,504 INFO success: sage_api entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+┌2025-11-12 07:49:05,472 INFO:threading.py:975:(TempManager)Fan speed is OFF                                                                                               │
 └2025-11-12 07:49:09,115 WARNING:events.py:80:(sage_man|bt_ctrl_thread)BT module 0 is not responding after reset                                                           │
 ─2025-11-12 07:49:12,126 INFO:driver_connections.cc:318:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchBT122                                                           │
 ┌2025-11-12 07:49:12,192 DEBUG:threading.py:1038:(Thread-3)uart 0 < dumo_evt_dfu_boot(version=1)                                                                           │
@@ -26,4 +164,5 @@
 │2025-11-12 07:49:17,574 DEBUG:threading.py:1038:(Thread-6)uart 2 < dumo_evt_system_initialized(address='c4:d3:6a:b1:81:7a')                                               │
 │2025-11-12 07:49:17,575 DEBUG:threading.py:1038:(Thread-5)uart 1 < dumo_evt_system_initialized(address='c4:d3:6a:b1:98:92')                                               │
 │2025-11-12 07:49:17,581 DEBUG:threading.py:1038:(Thread-7)uart 3 < dumo_evt_system_initialized(address='c4:d3:6a:b1:81:1a')                                               │
-│2025-11-12 07:49:20,603 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)bt_thread is waiting for new event  
+│2025-11-12 07:49:20,603 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)bt_thread is waiting for new event                                                                │
+                                                                                                                
