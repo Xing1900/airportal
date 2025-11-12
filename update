@@ -1,0 +1,16 @@
+│2025-11-12 03:02:05,295 DEBUG:threading.py:1038:(Thread-3)uart 0 < dumo_evt_endpoint_status(endpoint=31, type=16, destina│
+│    self.run()                                                                                                           │
+│  File "bt_module.py", line 113, in bt_module.BluetoothThread.run                                                        │
+│  File "bt122/bt122_module.py", line 61, in bt122.bt122_module.Bt122Module.is_onboard                                    │
+│  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run                                                        │
+│    return runner.run(main)                                                                                              │
+│           ^^^^^^^^^^^^^^^^                                                                                              │
+│  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run                                                        │
+│    return self._loop.run_until_complete(task)                                                                           │
+│           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                           │
+│  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete                                     │
+│    return future.result()                                                                                               │
+│           ^^^^^^^^^^^^^^^                                                                                               │
+│  File "bt122/bt122_module.py", line 238, in reset                                                                       │
+│AssertionError: BT122 firmware version is not outdated. You may upgrade firmware first.                                  │
+│Please execute shell script `sage system --updatebt122`  
