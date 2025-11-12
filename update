@@ -1,16 +1,16 @@
-│2025-11-12 03:02:05,295 DEBUG:threading.py:1038:(Thread-3)uart 0 < dumo_evt_endpoint_status(endpoint=31, type=16, destina│
-│    self.run()                                                                                                           │
-│  File "bt_module.py", line 113, in bt_module.BluetoothThread.run                                                        │
-│  File "bt122/bt122_module.py", line 61, in bt122.bt122_module.Bt122Module.is_onboard                                    │
-│  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run                                                        │
-│    return runner.run(main)                                                                                              │
-│           ^^^^^^^^^^^^^^^^                                                                                              │
-│  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run                                                        │
-│    return self._loop.run_until_complete(task)                                                                           │
-│           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                           │
-│  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete                                     │
-│    return future.result()                                                                                               │
-│           ^^^^^^^^^^^^^^^                                                                                               │
-│  File "bt122/bt122_module.py", line 238, in reset                                                                       │
-│AssertionError: BT122 firmware version is not outdated. You may upgrade firmware first.                                  │
-│Please execute shell script `sage system --updatebt122`  
+025-11-12 06:37:13,863 INFO:default_dpm.py:203:(MainThread)App 0301_0 enters to new state CONFIGURE                                                 │
+┌2025-11-12 06:37:14,669 INFO:man:31:(MainThread)Creating new BT worker                                                                               │
+│2025-11-12 06:37:14,702 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)starting bt_thread                                                           │
+│2025-11-12 06:37:14,702 INFO:man:31:(MainThread)Creating new command worker                                                                          │
+│2025-11-12 06:37:14,702 INFO:man:31:(MainThread)Waiting on request from DPM to pair with dots                                                        │
+│2025-11-12 06:37:15,671 INFO:threading.py:975:(HwButtonMonitor)Dip switch 1 state has changed to 0                                                   │
+│2025-11-12 06:37:15,674 INFO:threading.py:975:(HwButtonMonitor)Dip switch 2 state has changed to 0                                                   │
+│2025-11-12 06:37:15,674 INFO:threading.py:975:(HwButtonMonitor)running command sage wlan serve                                                       │
+│Error: Device 'wlan0' (/org/freedesktop/NetworkManager/Devices/3) disconnecting failed: This device is not active                                    │
+│Error: not all devices disconnected.                                                                                                                 │
+│Connection 'SageAP' (96623d7e-95ac-40f5-9944-9f2440fc7a47) successfully deleted.                                                                     │
+│Connection 'SageAP' (189e3726-9e11-4a33-bf64-c179ab9a7c47) successfully added.                                                                       │
+│Error: Connection activation failed: No suitable device found for this connection (device eth0 not available because profile is not compatible with d│
+│2025-11-12 06:37:15,846 INFO:threading.py:975:(HwButtonMonitor)Dip switch 3 state has changed to 0                                                   │
+└2025-11-12 06:37:15,847 INFO:threading.py:975:(HwButtonMonitor)Dip switch 4 state has changed to 0                                                   │
+─2025-11-12 06:37:16,703 INFO:driver_connections.cc:326:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchWT41U 
