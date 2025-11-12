@@ -1,16 +1,52 @@
-025-11-12 06:37:13,863 INFO:default_dpm.py:203:(MainThread)App 0301_0 enters to new state CONFIGURE                                                 │
-┌2025-11-12 06:37:14,669 INFO:man:31:(MainThread)Creating new BT worker                                                                               │
-│2025-11-12 06:37:14,702 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)starting bt_thread                                                           │
-│2025-11-12 06:37:14,702 INFO:man:31:(MainThread)Creating new command worker                                                                          │
-│2025-11-12 06:37:14,702 INFO:man:31:(MainThread)Waiting on request from DPM to pair with dots                                                        │
-│2025-11-12 06:37:15,671 INFO:threading.py:975:(HwButtonMonitor)Dip switch 1 state has changed to 0                                                   │
-│2025-11-12 06:37:15,674 INFO:threading.py:975:(HwButtonMonitor)Dip switch 2 state has changed to 0                                                   │
-│2025-11-12 06:37:15,674 INFO:threading.py:975:(HwButtonMonitor)running command sage wlan serve                                                       │
-│Error: Device 'wlan0' (/org/freedesktop/NetworkManager/Devices/3) disconnecting failed: This device is not active                                    │
-│Error: not all devices disconnected.                                                                                                                 │
-│Connection 'SageAP' (96623d7e-95ac-40f5-9944-9f2440fc7a47) successfully deleted.                                                                     │
-│Connection 'SageAP' (189e3726-9e11-4a33-bf64-c179ab9a7c47) successfully added.                                                                       │
-│Error: Connection activation failed: No suitable device found for this connection (device eth0 not available because profile is not compatible with d│
-│2025-11-12 06:37:15,846 INFO:threading.py:975:(HwButtonMonitor)Dip switch 3 state has changed to 0                                                   │
-└2025-11-12 06:37:15,847 INFO:threading.py:975:(HwButtonMonitor)Dip switch 4 state has changed to 0                                                   │
-─2025-11-12 06:37:16,703 INFO:driver_connections.cc:326:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchWT41U 
+2025-11-12 07:33:56,648 WARN exited: sage_man (terminated by SIGTERM; not expected)                                                                                       │
+│2025-11-12 07:33:56,863 INFO exited: sage_dpm (exit status 0; expected)                                                                                                   │
+│2025-11-12 07:33:57,646 INFO stopped: sage_api (exit status 0)                                                                                                            │
+│2025-11-12 07:35:52,809 INFO Set uid to user 0 succeeded                                                                                                                  │
+│2025-11-12 07:35:52,812 INFO RPC interface 'supervisor' initialized                                                                                                       │
+│2025-11-12 07:35:52,812 CRIT Server 'unix_http_server' running without any HTTP authentication checking                                                                   │
+│2025-11-12 07:35:52,812 INFO supervisord started with pid 4542                                                                                                            │
+│2025-11-12 07:35:53,815 INFO spawned: 'sage_drv' with pid 4558                                                                                                            │
+│2025-11-12 07:35:53,818 INFO spawned: 'sage_man' with pid 4559                                                                                                            │
+└2025-11-12 07:35:53,821 INFO spawned: 'sage_dpm' with pid 4560                                                                                                            │
+─2025-11-12 07:35:53,824 INFO:sage_driver.cc:223:(RunDriver)Beginning Driver process                                                                                       │
+─2025-11-12 07:35:53,824 INFO spawned: 'sage_api' with pid 4561                                                                                                            │
+┌2025-11-12 07:35:54,316 INFO:man:30:(MainThread)Beginning system manager process                                                                                          │
+│2025-11-12 07:35:54,316 INFO:man:31:(MainThread)Start system manager                                                                                                      │
+│2025-11-12 07:35:54,316 INFO:man:31:(MainThread)current system status: version: 4.8.2_dev commit id: 2d7a0ca3                                                             │
+└[50%] app zip file extracted                                                                                                                                              │
+─2025-11-12 07:35:54,339 INFO:spi_wrapper.cc:64:(InitializeSpi)Sage driver began with IRQ not asserted                                                                     │
+┌2025-11-12 07:35:54,657 ERROR:man:31:(MainThread)The app RawData+1_0+030 with version_id 03010 already exists on the system. Delete it first or change the version_id of y│
+│2025-11-12 07:35:54,667 DEBUG:man:31:(MainThread)Creating Messenger on socket 5559 with mode 1                                                                            │
+│2025-11-12 07:35:54,668 DEBUG:man:31:(MainThread)Creating Messenger on socket 5561 with mode 1                                                                            │
+│2025-11-12 07:35:54,668 DEBUG:man:31:(MainThread)Creating Messenger on socket 5564 with mode 1                                                                            │
+│2025-11-12 07:35:54,668 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5560 with mode 0                                                                  │
+│2025-11-12 07:35:54,668 DEBUG:man:31:(MainThread)Creating Messenger on socket 5566 with mode 1                                                                            │
+│2025-11-12 07:35:54,668 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5558 with mode 0                                                                  │
+│2025-11-12 07:35:54,668 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5565 with mode 0                                                                  │
+│2025-11-12 07:35:54,669 DEBUG:threading.py:975:(LedControl)Creating Messenger on socket 5567 with mode 0    
+Unknown argument "set"                                                                                                                                                    │
+└2025-11-12 07:35:54,683 INFO:threading.py:975:(TempManager)Temp Manager Thread Started                                                                                    │
+┌2025-11-12 07:35:55,447 INFO:default_dpm.py:277:(MainThread)Starting Data Processing Module                                                                               │
+│2025-11-12 07:35:55,462 INFO:default_dpm.py:209:(MainThread)Start new app process                                                                                         │
+│2025-11-12 07:35:55,480 INFO:default_dpm.py:203:(MainThread)App 0301_0 enters to new state LOADING                                                                        │
+└2025-11-12 07:35:55,482 INFO:default_dpm.py:192:(MainThread)App 0301_0 is importing from RawData+1_0+030                                                                  │
+─2025-11-12 07:35:55,681 INFO:man:31:(MainThread)Creating new BT worker                                                                                                    │
+─2025-11-12 07:35:55,689 INFO:default_dpm.py:203:(MainThread)App 0301_0 enters to new state CONFIGURE                                                                      │
+┌2025-11-12 07:35:55,714 INFO:threading.py:1038:(sage_man|bt_ctrl_thread)starting bt_thread                                                                                │
+│2025-11-12 07:35:55,715 INFO:man:31:(MainThread)Creating new command worker                                                                                               │
+│2025-11-12 07:35:55,715 INFO:man:31:(MainThread)Waiting on request from DPM to pair with dots                                                                             │
+│2025-11-12 07:35:56,683 INFO:threading.py:975:(HwButtonMonitor)Dip switch 1 state has changed to 0                                                                        │
+│2025-11-12 07:35:56,684 INFO:threading.py:975:(HwButtonMonitor)Dip switch 2 state has changed to 0                                                                        │
+│2025-11-12 07:35:56,684 INFO:threading.py:975:(HwButtonMonitor)running command sage wlan serve                                                                            │
+│Error: Device 'wlan0' (/org/freedesktop/NetworkManager/Devices/3) disconnecting failed: This device is not active                                                         │
+│Error: not all devices disconnected.                                                                                                                                      │
+│Connection 'SageAP' (55e9c5c0-073e-43cd-aa79-ab782650b419) successfully deleted.                                                                                          │
+│Connection 'SageAP' (304f5dc3-0c65-4655-b48e-99d99026dac9) successfully added.                                                                                            │
+└Error: Connection activation failed: No suitable device found for this connection (device eth0 not available because profile is not compatible with device (mismatching in│
+┌2025-11-12 07:35:56,817 INFO success: sage_drv entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+│2025-11-12 07:35:56,817 INFO success: sage_man entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+│2025-11-12 07:35:56,838 INFO success: sage_dpm entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+└2025-11-12 07:35:56,838 INFO success: sage_api entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)                                              │
+┌2025-11-12 07:35:56,857 INFO:threading.py:975:(HwButtonMonitor)Dip switch 3 state has changed to 0                                                                        │
+└2025-11-12 07:35:56,858 INFO:threading.py:975:(HwButtonMonitor)Dip switch 4 state has changed to 0                                                                        │
+─2025-11-12 07:35:57,716 INFO:driver_connections.cc:326:(ProcessHwCtrlMsg)Receive HwCtrl message for SwitchWT41U           
